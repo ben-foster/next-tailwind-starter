@@ -1,0 +1,66 @@
+@tailwind base;
+
+html {
+	@apply block text-sm text-gray-900 subpixel-antialiased leading-tight font-sans;
+}
+
+body {
+	@apply block overflow-hidden;
+}
+
+h1 {
+	@apply text-4xl font-bold text-gray-800 mb-4;
+}
+
+h2 {
+	@apply text-xl text-gray-800 mb-4;
+}
+
+h3, h4, h5 {
+	@apply text-lg text-gray-800 mb-2;
+}
+
+h1, h2, h3, h4, h5 {
+	@apply w-auto;
+}
+
+p {
+	@apply text-base mb-2;
+}
+
+a {
+	@apply text-blue-600;
+}
+
+button {
+	@apply outline-none;
+}
+
+ul {
+    @apply list-disc list-outside;
+    padding-left: 1em;
+}
+
+ol {
+    @apply list-decimal list-outside;
+}
+
+li {
+    @apply m-1;
+}
+
+select {
+    /* width: 268px; */
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    /* border: 0; */
+    /* border-radius: 5px; */
+    /* height: 34px; */
+    background: url("/down-chevron.svg") no-repeat right #ddd;
+    -webkit-appearance: none;
+    /* background-position-x: 244px; */
+}
+
+@tailwind components;
+@tailwind utilities;
